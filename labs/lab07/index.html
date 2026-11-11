@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lab 7 - Unsplash API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- search bar -->
+
+    <header>
+        <h2>Unsplash API</h2>
+
+        <input type="text"
+               id="searchInput"
+               placeholder="Search photos">
+
+        <button id="xhrButton">
+            Search using XHR
+        </button>
+
+        <button id="promiseButton">
+            Search using fetch (promises)
+        </button>
+
+        <button id="asyncButton">
+            Search using fetch (async/await)
+        </button>
+    </header>
+
+    <!-- search status -->
+
+    <p id="status"></p>
+
+    <!-- photos gallery -->
+
+    <main id="gallery"></main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
