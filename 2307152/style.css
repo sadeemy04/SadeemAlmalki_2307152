@@ -1,0 +1,971 @@
+
+/* general Website style */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF9F0;
+    background-image: url("images/backGround.png");
+    background-repeat: repeat;
+    color: #365C80;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar -- shared among All Pages */
+
+.site-header {
+    background-color: #DCEAF5;
+    padding: 20px 7%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-logo h2 {
+    color: #365C80;
+    font-size: 23px;
+    margin: 0;
+}
+
+.nav-logo p {
+    color: #7297B8;
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.nav-links a {
+    display: inline-block;
+    color: #365C80;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.nav-links a:hover {
+    color: #527FA4;
+    text-decoration: underline;
+}
+
+.nav-links .active {
+    color: #527FA4;
+    text-decoration: underline;
+}
+
+
+
+/* profile picture -- cv , contact and labs pages */
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #7EA9C9;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* footer -- shared among all pages*/
+
+.site-footer {
+    background-color: #DCEAF5;
+    color: #365C80;
+    text-align: center;
+    padding: 20px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+
+/*-- home page layout --*/
+
+.home-page {
+    min-height: 90vh;
+    padding: 50px 6%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+/* -animated Cat- */
+
+.welcome-image {
+    width: 50%;
+    text-align: center;
+}
+
+.welcome-image img {
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+/*  -Welcome Text- */
+
+.welcome-text {
+    width: 40%;
+}
+
+.welcome-text h2 {
+    font-size: 30px;
+    color: #7EA9C9;
+    margin-bottom: 10px;
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    color: #365C80;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.welcome-text h3 {
+    font-size: 21px;
+    color: #7297B8;
+}
+
+
+/* -student Information- */
+
+.student-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.student-id {
+    font-size: 16px;
+    color: #7297B8;
+    margin-top: 0;
+}
+
+
+/* -About Me-*/
+
+.welcome-text .about-title {
+    color: #365C80;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.about-description {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+
+/*  -explore more section- */
+
+.explore-section {
+    width: 100%;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.explore-section h2 {
+    font-size: 28px;
+    color: #7297B8;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+/* -home navigation Buttons-   */
+
+.home-navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-link {
+    display: inline-block;
+    background-color: #7EA9C9;
+    color: white;
+    text-decoration: none;
+    padding: 18px 35px;
+    border-radius: 12px;
+    font-weight: bold;
+    text-align: center;
+    min-width: 180px;
+    margin: 8px;
+}
+
+.home-link:hover {
+    background-color: #527FA4;
+}
+
+.home-link.current {
+    background-color: #527FA4;
+}
+
+
+/* --- home page Responsive design , so website can apply to screen for different sizes---*/
+
+@media (max-width: 768px) {
+
+    /* -Home Page- */
+
+    .home-page {
+        flex-direction: column;
+        padding: 35px 6%;
+        text-align: center;
+    }
+
+    /* -animated Cat- */
+
+    .welcome-image {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .welcome-image img {
+        max-width: 500px;
+    }
+
+    /* -Welcome Text- */
+
+    .welcome-text {
+        width: 100%;
+    }
+
+    .welcome-text h1 {
+        font-size: 36px;
+    }
+
+    .welcome-text h2 {
+        font-size: 26px;
+    }
+
+    .welcome-text h3 {
+        font-size: 18px;
+    }
+
+    .student-name {
+        font-size: 19px;
+    }
+
+    /* -about me- */
+
+    .welcome-text .about-title {
+        font-size: 22px;
+    }
+
+    .about-description {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* -explore more- */
+
+    .explore-section {
+        margin-top: 35px;
+    }
+
+    .explore-section h2 {
+        font-size: 25px;
+    }
+
+    .home-link {
+        min-width: 120px;
+        padding: 12px 18px;
+        margin: 5px;
+    }
+
+}
+
+
+/* --- main layout of the cv page --- */
+
+.cv-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 35px 7%;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* - left sidebar- */
+
+.cv-sidebar {
+    width: 24%;
+    background-color: white;
+    padding: 25px 18px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+
+
+/* -sidebar navigation buttons- */
+
+.cv-section-buttons a {
+    display: block;
+    background-color: #7EA9C9;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 9px;
+}
+
+.cv-section-buttons a:hover {
+    background-color: #527FA4;
+}
+
+
+/* - Personal information -*/
+
+.cv-info {
+    margin-top: 25px;
+}
+
+.cv-info h3 {
+    color: #365C80;
+    font-size: 22px;
+    border-bottom: 2px solid #DCEAF5;
+    padding-bottom: 12px;
+}
+
+.cv-info p {
+    color: #365C80;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: break-word;
+}
+
+.cv-info a {
+    color: #527FA4;
+    text-decoration: none;
+}
+
+.cv-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* - CV main content- */
+
+.cv-content {
+    width: 73%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+/* - CV Sections - */
+
+.cv-section {
+    margin-bottom: 35px;
+}
+
+.cv-section h2 {
+    color: #365C80;
+    font-size: 24px;
+    border-bottom: 2px solid #DCEAF5;
+    padding-bottom: 12px;
+    margin-top: 0;
+}
+
+.cv-section h3 {
+    color: #7297B8;
+    font-size: 19px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+}
+
+.cv-section p {
+    color: #365C80;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.cv-section ul {
+    padding-left: 22px;
+}
+
+.cv-section li {
+    color: #365C80;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 5px;
+}
+
+
+/*--Navigation Bar responsive design - All pages--*/
+.navbar {
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav-links {
+    margin-top: 20px;
+}
+
+.nav-links a {
+    margin: 7px;
+}
+
+/* --CV and contact page Responsive Design-- */
+
+@media (max-width: 768px) {
+
+    /* navigation bar */
+
+    .cv-navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cv-nav-links {
+        margin-top: 20px;
+    }
+
+    .cv-nav-links a {
+        margin: 7px;
+    }
+
+    /* cv Main Layout */
+
+    .cv-page {
+        flex-direction: column;
+        padding: 25px 5%;
+    }
+
+    /* sidebar */
+
+    .cv-sidebar {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .profile-photo {
+        width: 140px;
+        height: 140px;
+    }
+
+    .cv-section-buttons a {
+        padding: 12px;
+    }
+
+    /* cv main Content */
+
+    .cv-content {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .cv-section h2 {
+        font-size: 21px;
+    }
+
+    .cv-section h3 {
+        font-size: 18px;
+    }
+
+    .cv-section p,
+    .cv-section li {
+        font-size: 15px;
+    }
+
+/* contact page responsive */
+
+.contact-page {
+    flex-direction: column;
+    width: 92%;
+    margin: 30px auto;
+}
+
+.contact-sidebar {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.contact-content {
+    width: 100%;
+    padding: 22px;
+}
+
+.contact-content h2 {
+    font-size: 22px;
+}
+
+.send-button {
+    width: 100%;
+}
+
+.message-type label {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+}
+
+/* ----- contact page style ---- */
+
+
+/* contact page layout */
+
+.contact-page {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* contact sidebar */
+
+.contact-sidebar {
+    width: 30%;
+    text-align: center;
+}
+
+
+
+
+
+/* contact information box */
+
+.contact-info-box {
+    background-color: #DCEAF5;
+    padding: 25px 20px;
+    border-radius: 15px;
+}
+
+
+/* contact information title */
+
+.contact-info-box h2 {
+    font-size: 24px;
+    color: #365C80;
+    border-bottom: 2px dashed white;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+
+/* contact information text */
+
+.contact-info-box p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.contact-info-box a {
+    color: #527FA4;
+    text-decoration: none;
+    overflow-wrap: break-word;
+}
+
+.contact-info-box a:hover {
+    text-decoration: underline;
+}
+
+
+/* social links this design shared among all pages that implement social links*/
+
+.contact-social-links {
+    margin-top: 25px;
+}
+
+.contact-social-links a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+}
+
+/* social icons */
+
+.social-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+/* social icons hover */
+
+.social-icon:hover {
+    filter: brightness(0.85);
+}
+
+/* contact form card */
+
+.contact-content {
+    width: 67%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+/* contact form title */
+
+.contact-content h2 {
+    font-size: 24px;
+    color: #365C80;
+    border-bottom: 2px dashed #DCEAF5;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+.contact-content p {
+    color: #7297B8;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+/* form labels */
+
+.contact-content form > label {
+    display: block;
+    font-size: 16px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+
+/* form input fields */
+
+.contact-content input[type="text"],
+.contact-content input[type="email"],
+.contact-content textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #DCEAF5;
+    border-left: 4px solid #7EA9C9;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #365C80;
+}
+
+
+/* form focus */
+
+.contact-content input:focus,
+.contact-content textarea:focus {
+    outline-color: #7EA9C9;
+}
+
+
+/* message textarea */
+
+.contact-content textarea {
+    resize: vertical;
+}
+
+
+/* message type */
+
+.message-type {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.message-type label {
+    margin-left: 12px;
+}
+
+.message-type input {
+    accent-color: #7EA9C9;
+}
+
+
+/* send button */
+
+.send-button {
+    background-color: #7EA9C9;
+    color: white;
+    border: none;
+    padding: 13px 45px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #527FA4;
+}
+
+
+/* ----- contact page responsive ----- */
+
+@media (max-width: 768px) {
+
+    /* contact page layout */
+
+    .contact-page {
+        flex-direction: column;
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    /* contact sidebar */
+
+    .contact-sidebar {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    /* contact form card */
+
+    .contact-content {
+        width: 100%;
+        padding: 22px;
+    }
+
+    /* contact form title */
+
+    .contact-content h2 {
+        font-size: 22px;
+    }
+
+    /* message type */
+
+    .message-type label {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    /* send button */
+
+    .send-button {
+        width: 100%;
+    }
+
+}
+
+
+/* ----- projects page style ----- */
+
+/* projects page layout */
+
+.projects-page {
+    width: 90%;
+    max-width: 1200px;
+    min-height: 75vh;
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* projects sidebar */
+
+.projects-sidebar {
+    width: 28%;
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+
+
+
+/* sidebar headings */
+
+.projects-sidebar h2 {
+    font-size: 22px;
+    color: #365C80;
+    border-bottom: 2px dashed #DCEAF5;
+    padding-bottom: 12px;
+    margin-top: 20px;
+}
+
+
+/* quick links */
+
+.projects-quick-links a {
+    display: block;
+    background-color: #DCEAF5;
+    color: #365C80;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 9px;
+}
+
+.projects-quick-links a:hover {
+    background-color: #7EA9C9;
+    color: white;
+}
+
+
+/* portfolio links */
+
+.projects-portfolio-links a {
+    display: block;
+    color: #527FA4;
+    text-decoration: none;
+    padding: 8px;
+}
+
+.projects-portfolio-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* github icon */
+
+.projects-portfolio-links .social-icon {
+    margin-top: 12px;
+}
+
+
+/* projects main content */
+
+.projects-content {
+    width: 69%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+/* labs and projects sections */
+
+.projects-section {
+    margin-bottom: 35px;
+}
+
+.projects-section h2 {
+    color: #365C80;
+    font-size: 24px;
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 2px dashed #DCEAF5;
+}
+
+
+/* tables */
+
+.projects-table-container {
+    width: 100%;
+}
+
+.projects-table {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* table headings */
+
+.projects-table th {
+    background-color: #7EA9C9;
+    color: white;
+    padding: 14px 10px;
+    font-size: 15px;
+}
+
+
+/* table cells */
+
+.projects-table td {
+    padding: 14px 10px;
+    border-bottom: 1px solid #DCEAF5;
+    color: #365C80;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* alternating table rows */
+
+.projects-table tbody tr:nth-child(even) {
+    background-color: #EDF5FA;
+}
+
+
+/* table links */
+
+.projects-table a {
+    color: #527FA4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.projects-table a:hover {
+    text-decoration: underline;
+}
+
+
+/* ----- labs page responsive ----- */
+
+@media (max-width: 768px) {
+
+    /* projects page layout */
+
+    .projects-page {
+        flex-direction: column;
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    /* sidebar */
+
+    .projects-sidebar {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    /* main content */
+
+    .projects-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* section headings */
+
+    .projects-section h2 {
+        font-size: 21px;
+    }
+
+    /* tables */
+
+    .projects-table th,
+    .projects-table td {
+        font-size: 12px;
+        padding: 10px 6px;
+    }
+
+}
+

@@ -1,0 +1,212 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- page title -->
+    <title>Contact | Sadeem's Portfolio</title>
+
+    <!-- external css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- navigation bar -->
+
+    <header class="site-header">
+        <nav class="navbar">
+
+            <div class="nav-logo">
+                <h2>Sadeem Almalki</h2>
+                <p>Information Technology Student</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="cv.html">CV</a>
+                <a href="labs.html">Projects</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- contact page layout -->
+
+    <main class="contact-page">
+
+        <!-- contact sidebar -->
+
+        <aside class="contact-sidebar">
+
+            <!-- profile photo -->
+
+            <img src="images/profile-pic.png"
+                 alt="Sadeem's Profile Photo"
+                 class="profile-photo">
+
+
+            <!-- contact information box -->
+
+            <div class="contact-info-box">
+
+                <h2>Contact Info</h2>
+
+                <!-- email -->
+
+                <p><strong>Email:</strong></p>
+
+                <p>
+                    <a href="mailto:salmalki0767@kau.edu.sa">
+                        salmalki0767@kau.edu.sa
+                    </a>
+                </p>
+
+
+                <!-- phone number -->
+
+                <p><strong>Phone:</strong></p>
+
+                <p>
+                    <a href="tel:+966554453612">
+                        0554453612
+                    </a>
+                </p>
+
+
+        
+        
+      
+
+            <!-- social links -->
+
+              <div class="contact-social-links">
+
+               <a href="https://github.com/sadeemy04"
+                    target="_blank">
+                   <img src="images/github-icon.png"
+                     alt="GitHub"
+                    class="social-icon">
+                </a>
+
+                <a href="https://www.linkedin.com/in/sadeem-abduallah"
+                    target="_blank">
+                <img src="images/linkedIn-icon.png"
+                     alt="LinkedIn"
+                     class="social-icon">
+                  </a>
+
+               </div>
+
+          
+            </div>
+
+       <!-- close contact sidebar -->
+         </aside>
+
+
+        <!-- contact form card -->
+
+        <section class="contact-content">
+
+            <h2>Contact Me</h2>
+
+            <p>
+                Have a question or want to share feedback?
+                Feel free to send me a message!
+            </p>
+
+
+            <!-- formsubmit contact form -->
+
+            <form action="https://formsubmit.co/salmalki0767@stu.kau.edu.sa"
+                  method="POST">
+
+                <!-- email subject -->
+
+                <input type="hidden"
+                       name="_subject"
+                       value="New Message from Sadeem's Portfolio">
+
+
+                <!-- name -->
+
+                <label for="name">Name:</label>
+
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
+
+
+                <!-- email -->
+
+                <label for="email">Email:</label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+
+                <!-- message -->
+
+                <label for="message">Message:</label>
+
+                <textarea id="message"
+                          name="message"
+                          rows="8"
+                          required></textarea>
+
+
+                <!-- message type -->
+
+                <div class="message-type">
+
+                    <span>Message Type:</span>
+
+                    <label>
+                        <input type="radio"
+                               name="message_type"
+                               value="Inquiry"
+                               checked>
+                        Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio"
+                               name="message_type"
+                               value="Feedback">
+                        Feedback
+                    </label>
+
+                </div>
+
+
+                <!-- send button -->
+
+                <button type="submit" class="send-button">
+                    Send
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- footer -->
+
+    <footer class="site-footer">
+        <p>Whenever life gets tough, I just keep saying: "Just keep swimming." 🫧</p>
+    </footer>
+
+</body>
+</html>
