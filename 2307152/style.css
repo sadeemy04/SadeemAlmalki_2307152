@@ -720,6 +720,24 @@ body {
     background-color: #527FA4;
 }
 
+/*submitting form success message */
+
+.contact-content .success-message {
+    display: none;
+    background-color: #DCEAF5;
+    color: #365C80;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* show success message only after submit */
+
+.contact-content .success-message:target {
+    display: block;
+}
+
 
 /* ----- contact page responsive ----- */
 
