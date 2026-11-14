@@ -196,16 +196,18 @@ body {
     flex-wrap: wrap;
 }
 
+/* home navigation buttons */
+
 .home-link {
     display: inline-block;
     background-color: #7EA9C9;
     color: white;
     text-decoration: none;
-    padding: 18px 35px;
+    padding: 18px 15px;
     border-radius: 12px;
     font-weight: bold;
     text-align: center;
-    min-width: 180px;
+    width: 200px;
     margin: 8px;
 }
 
@@ -720,8 +722,7 @@ body {
     background-color: #527FA4;
 }
 
-/*submitting form success message */
-
+/* form submitted success message design - hidden by default */
 .contact-content .success-message {
     display: none;
     background-color: #DCEAF5;
@@ -732,7 +733,7 @@ body {
     font-weight: bold;
 }
 
-/* show success message only after submit */
+/* show success message only after submit ( when url ends with #sent) */
 
 .contact-content .success-message:target {
     display: block;
